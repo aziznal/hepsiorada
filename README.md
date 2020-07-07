@@ -2,7 +2,8 @@
 
 ---
 
-- This is an imitation of interface for the famous turkish e-commerce website [Hepsiburada](https://www.hepsiburada.com)
+- This is an imitation of the interface for the famous turkish e-commerce website [Hepsiburada](https://www.hepsiburada.com)
+- This only imitates the home page of the site.
 
 - This was a learning project done to test my skills in HTML, CSS, and some simple JavaScript.
 
