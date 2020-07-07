@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Türkiye'nin İlk ve Tek Offline Alışveriş Sitesi</title>
+
+        <script
+            src="https://kit.fontawesome.com/2a27b320f1.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+    </head>
+    <body>
+        <div class="topmost-links">
+            <ul>
+                <li><a href="#">Siparişlerim</a></li>
+                <li><a href="#">Günün Fırsatları</a></li>
+                <li><a href="#">Yurt Dışı Satış</a></li>
+                <li><a href="#">Bugün Teslimat</a></li>
+                <li><a href="#">Kampanyalar</a></li>
+                <li>
+                    <a href="#" style="color: rgb(253, 87, 26);"
+                        >Girişimci Kişiler</a
+                    >
+                </li>
+                <li><a href="#">Yardım</a></li>
+                <li><a href="#">Bize Sorun</a></li>
+            </ul>
+        </div>
+
+        <div id="account-overlay"></div>
+
+        <div class="top-container">
+            <div class="page-title">hepsiorada</div>
+
+            <div id="search-bar" class="bordered-box search-bar">
+                <i class="fas fa-search"></i>
+                <input
+                    id="search-input"
+                    placeholder="Ürün, kategori veya marka ara"
+                />
+                <div id="search-bar-button" class="search-button">
+                    <span>ARA</span>
+                </div>
+            </div>
+
+            <div>
+                <div class="bordered-box account-dropdown">
+                    <img id="user-account-icon" src="assets/user-icon.png" />
+
+                    <span class="account-text-upper">Giriş Yap</span>
+                    <span class="account-text-lower">veya üye ol</span>
+                    <i class="fas fa-chevron-down"></i>
+
+                    <span id="account-dropdown-collision"></span>
+                    <span id="account-dropdown-arrow"></span>
+
+                    <div class="dropdown-content">
+                        <ul>
+                            <li class="text"><a href="#">Giriş Yap</a></li>
+                            <li class="text"><a href="#">Üye Ol</a></li>
+                            <li class="line-break"></li>
+                            <li class="text"><a href="#">Siparişlerim</a></li>
+                            <li class="text"><a href="#">Hesabım</a></li>
+                            <li class="text"><a href="#">Yorumlarım</a></li>
+                            <li class="line-break"></li>
+                            <li class="text"><a href="#">Beğendiklerim</a></li>
+                            <li class="text"><a href="#">Tüm Listelerim</a></li>
+                            <li class="line-break"></li>
+                            <li class="text">
+                                <a href="#">Hediye Çeklerim</a>
+                            </li>
+                            <li class="line-break"></li>
+                            <li class="text"><a href="#">Mesajlarım</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bordered-box basket">
+                <div>
+                    <img id="basket-icon" src="assets/basket-icon.png" />
+                    <span id="basket-item-count">0</span>
+                </div>
+
+                <span id="textAfterBasket">Sepetim</span>
+            </div>
+        </div>
+
+        <div class="colored-band-container">
+            <div class="colored-band0"></div>
+            <div class="colored-band1"></div>
+            <div class="colored-band2"></div>
+            <div class="colored-band3"></div>
+            <div class="colored-band4"></div>
+            <div class="colored-band5"></div>
+        </div>
+
+        <div id="menu-bar-overlay"></div>
+
+        <div class="menu-bar-container">
+            <ul id="menu-bar-ul" class="menu-bar-header-container">
+                <li class="header-vertical-line"></li>
+
+                <li id="electronic-header" class="menu-bar-list-item">
+                    <span class="menu-bar-header">Elektronik</span>
+                    <div
+                        id="electronic-custom-dropdown"
+                        class="header-dropdown-menu"
+                    >
+                        <ul>
+                            <li id="electronic-mini-header-bilgisayar-tablet">
+                                <div>
+                                    <a href="#">Bilgisayar/Tablet</a>
+                                </div>
+
+                                <i
+                                    class="fas fa-chevron-right electronic-custom-dropdown-right-arrow"
+                                ></i>
+
+                                <div class="right-border-indicator"></div>
+                            </li>
+
+                            <li id="electronic-mini-header-yazicilar">
+                                <div>
+                                    <a href="#">Yazıcılar & Projeksiyon</a>
+                                </div>
+
+                                <i
+                                    class="fas fa-chevron-right electronic-custom-dropdown-right-arrow"
+                                ></i>
+
+                                <div class="right-border-indicator"></div>
+                            </li>
+
+                            <li id="electronic-mini-header-telefon">
+                                <div>
+                                    <a href="#"
+                                        >Telefon & Telefon Aksesuarları</a
+                                    >
+                                </div>
+
+                                <i
+                                    class="fas fa-chevron-right electronic-custom-dropdown-right-arrow"
+                                ></i>
+
+                                <div class="right-border-indicator"></div>
+                            </li>
+
+                            <li id="electronic-mini-header-tv-ses">
+                                <div>
+                                    <a href="#">TV, Görüntü & Ses Sistemleri</a>
+                                </div>
+
+                                <i
+                                    class="fas fa-chevron-right electronic-custom-dropdown-right-arrow"
+                                ></i>
+
+                                <div class="right-border-indicator"></div>
+                            </li>
+
+                            <li id="electronic-mini-header-beyaz-esya">
+                                <div>
+                                    <a href="#">Beyaz Eşya</a>
+                                </div>
+
+                                <i
+                                    class="fas fa-chevron-right electronic-custom-dropdown-right-arrow"
+                                ></i>
+
+                                <div class="right-border-indicator"></div>
+                            </li>
+
+                            <li id="electronic-mini-header-ev-aletleri">
+                                <div>
+                                    <a href="#">Elektrikli Ev Aletleri</a>
+                                </div>
+
+                                <i
+                                    class="fas fa-chevron-right electronic-custom-dropdown-right-arrow"
+                                ></i>
+
+                                <div class="right-border-indicator"></div>
+                            </li>
+
+                            <li id="electronic-mini-header-foto-kamera">
+                                <div>
+                                    <a href="#">Foto & Kamera</a>
+                                </div>
+
+                                <i
+                                    class="fas fa-chevron-right electronic-custom-dropdown-right-arrow"
+                                ></i>
+
+                                <div class="right-border-indicator"></div>
+                            </li>
+
+                            <li id="electronic-mini-header-klima">
+                                <div>
+                                    <a href="#">Klima ve Isıtıcılar</a>
+                                </div>
+
+                                <i
+                                    class="fas fa-chevron-right electronic-custom-dropdown-right-arrow"
+                                ></i>
+
+                                <div class="right-border-indicator"></div>
+                            </li>
+
+                            <li id="electronic-mini-header-oyun-konsollari">
+                                <div>
+                                    <a href="#">Oyun & Oyun Konsolları</a>
+                                </div>
+
+                                <i
+                                    class="fas fa-chevron-right electronic-custom-dropdown-right-arrow"
+                                ></i>
+
+                                <div class="right-border-indicator"></div>
+                            </li>
+                        </ul>
+
+                        <div
+                            class="electronic-mini-menu"
+                            id="electronic-bilgisayar-tablet"
+                            style="height: 500px;"
+                        >
+                            <div class="column-1">
+                                <div class="link-container column-1">
+                                    <span class="container-title"
+                                        ><a href="#">Dizüstü Bilgisayar</a></span
+                                    >
+                                    <span class="container-content"
+                                        ><a href="#">Notebook,</a>
+                                        <a href="#">Oyun Bilgisayarı,</a>
+                                        <a href="#">İkisi Bir Arada</a></span
+                                    >
+                                </div>
+                                <div class="link-container column-1">
+                                    <span class="container-title"
+                                        ><a href="#">Tablet</a></span
+                                    >
+                                    <span class="container-content"
+                                        ><a href="#">Apple,</a>
+                                        <a href="#">Samsung,</a>
+                                        <a href="#">Diğer</a></span
+                                    >
+                                </div>
+                                <div class="link-container column-1">
+                                    <span class="container-title"
+                                        ><a href="#">Masaüstü Bilgisayar</a></span
+                                    >
+                                    <span class="container-content"
+                                        ><a href="#">All-in-one,</a>
+                                        <a href="#">Masaüstü,</a>&nbsp;
+                                        <a href="#">Mini Masaüstü</a></span
+                                    >
+                                </div>
+                                <div class="link-container column-1">
+                                    <span class="container-title"
+                                        ><a href="#">Oyuncu Özel</a></span
+                                    >
+                                    <span class="container-content"
+                                        ><a href="#">Oyun Bilgisayarı,</a>
+                                        <a href="#">Oyun Donanımları,</a>
+                                        <a href="#">Klavye,</a>
+                                        <a href="#">Mouse,</a>
+                                        <a href="#">Kulaklık,</a>
+                                        <a href="#">Monitör</a></span
+                                    >
+                                </div>
+                                <div class="link-container column-1">
+                                    <span class="container-title"
+                                        ><a href="#">Veri Depolama</a></span
+                                    >
+                                    <span class="container-content"
+                                        ><a href="#">Hafıza Kartı,</a>
+                                        <a href="#">Usb Bellek,</a>
+                                        <a href="#">Taşınabilir Disk,</a>
+                                        <a href="#">SSD</a></span
+                                    >
+                                </div>
+
+                                <div class="link-container column-1">
+                                    <span class="container-title"><a href="#">Tüm Kategoriler</a></span>
+
+                                </div>
+                            </div>
+                            <div class="column-2">
+                                <div class="link-container column-2">
+                                    <span class="container-title"
+                                        ><a href="#"
+                                            >Bilgisayar Bileşenleri</a
+                                        ></span
+                                    >
+                                    <span class="container-content"
+                                        ><a href="#">Anakart,</a>
+                                        <a href="#">Ekran Kartları,</a>
+                                        <a href="#">Bellek (RAM),</a>
+                                        <a href="#">İşlemciler,</a>
+                                        <a href="#">Disk,</a>
+                                        <a href="#">Kasa</a></span
+                                    >
+                                </div>
+                                <div class="link-container column-2">
+                                    <span class="container-title"
+                                        ><a href="#">Yurt Dışına Satış</a></span
+                                    >
+                                </div>
+                                <div class="link-container column-2">
+                                    <span class="container-title"
+                                        ><a href="#"
+                                            >Ağ - Modem - Akıllı Ev</a
+                                        ></span
+                                    >
+                                    <span class="container-content"
+                                        ><a href="#">Access Point,</a>
+                                        <a href="#">Router,</a>
+                                        <a href="#">Modemler</a></span
+                                    >
+                                </div>
+                                <div class="link-container column-2">
+                                    <span class="container-title"
+                                        ><a href="#">Çevre Birimleri</a></span
+                                    >
+                                    <span class="container-content"
+                                        ><a href="#">Mouse,</a>
+                                        <a href="#">Klavye,</a>
+                                        <a href="#">Monitör,</a>
+                                        <a href="#">Yazıcı</a></span
+                                    >
+                                </div>
+                                <div class="link-container column-2">
+                                    <span class="container-title"
+                                        ><a href="#">Yazılım Ürünleri</a></span
+                                    >
+                                    <span class="container-content"><a href="#">Antivirüs ve Güvenlik,</a>
+                                        <a href="#">Office Yazılımları</a></span>
+                                </div>
+                                <div class="link-container column-2">
+                                    <span class="container-title"><a href="#">Aksesuarlar</a></span>
+                                    <span class="container-content">
+                                        <a href="#">Notebook Çantaları,</a>
+                                        <a href="#">Tablet ve iPad Aksesuarları,</a>
+                                        <a href="#">Kablolar/Switch ve Çoklayıcılar,</a>
+                                    </span>
+                                </div>
+                                <div class="link-container column-2">
+                                    <span class="container-title">
+                                        <a href="#">Kulaklık</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>  <!-- End of bilgisayar-tablet -->
+
+                        <div
+                            class="electronic-mini-menu"
+                            id="electronic-yazicilar"
+                            style="height: 450px;"
+                        >
+                            <div class="column-1">
+                                <div class="link-container">
+                                    <span class="container-title">
+                                        <a href="#">Yazıcılar</a>
+                                    </span>
+                                    <span class="container-content">
+                                        <a href="#">Lazer Yazıcı,</a>
+                                        <a href="#">Tanklı Yazıcı,</a>
+                                        <a href="#">Mürekkep Püskürtmeli Yazıcı,</a>
+                                        <a href="#">Nokta Vuruşlu Yazıcı,</a>
+                                        <a href="#">Fotoğraf Yazıcısı,</a>
+                                        <a href="#">3D Yazıcı,</a>
+                                        <a href="#">Barkod Yazıcı,</a>
+                                        <a href="#">Tarayıcı</a>
+                                    </span>
+                                </div>
+
+                                <div class="link-container">
+                                    <span class="container-title">
+                                        <a href="#">Sarf Malzemeleri</a>
+                                    </span>
+                                    <span class="container-content">
+                                        <a href="#">Toner,</a>
+                                        <a href="#">Kartuş,</a>
+                                        <a href="#">Drum,</a>
+                                        <a href="#">Şerit,</a>
+                                        <a href="#">Yazıcı Kağıdı</a>
+                                    </span>
+                                </div>
+
+                                <div class="link-container">
+                                    <span class="container-title">
+                                        <a href="#">Tüm Kategoriler</a>
+                                    </span>
+                                </div>
+                            </div>  <!-- end column 1 -->
+                            <div class="column-2">
+
+                                <div class="link-container">
+                                    <span class="container-title">
+                                        <a href="#">Projeksiyon Cihazı</a>
+                                    </span>
+                                </div>
+                                
+                                <div class="link-container">
+                                    <span class="container-title">
+                                        <a href="#">Projeksiyon Ekipmanları</a>
+                                    </span>
+                                    <span class="container-content">
+                                        <a href="#">Sunum Kumandası,</a>
+                                        <a href="#">Projeksiyon Perdesi,</a>
+                                        <a href="#">Askı Aparatı,</a>
+                                        <a href="#">Projeksiyon Lambası</a>
+                                    </span>
+                                </div>
+                                
+                                <div class="link-container">
+                                    <span class="container-title">
+                                        <a href="#">Yurt Dışına Satış</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>  <!-- End of Yazicilar -->
+
+                        <div
+                            class="electronic-mini-menu"
+                            id="electronic-telefon"
+                            style="height: 680px;">
+
+                            <div class="column-1">
+
+                                <div class="link-container">
+                                    <span class="container-title">
+                                        <a href="#">Cep Telefonu</a>
+                                    </span>
+                                    <span class="container-content">
+                                        <a href="#">Tüm Android Telefonlar,</a>
+                                        <a href="#">Samsung Telefonlar,</a>
+                                        <a href="#">Huawei Telefonlar,</a>
+                                        <a href="#">Xiaomi Telefonlar,</a>
+                                        <a href="#">Eski Telefonunu Alalım Hediye Çeki Verelim Kampanyası,</a>
+                                        <a href="#">iPhone iOS Telefonlar,</a>
+                                        <a href="#">Diğer Telefonlar,</a>
+                                        <a href="#">İkinci El Telefonlar,</a>
+                                    </span>
+                                </div>
+
+                                <div class="link-container">
+                                    <span class="container-title">
+                                        <a href="#">Tüm Cep Telefonu<br>Aksesuarları</a>
+                                    </span>
+                                    <span class="container-content">
+                                        <a href="#">Akıllı Saatler,</a>
+                                        <a href="#">Akıllı Bileklik,</a>
+                                        <a href="#">Powerbank,</a>
+                                        <a href="#">Bluetooth Kulaklıklar,</a>
+                                        <a href="#">Kılıflar,</a>
+                                        <a href="#">Şarj Cihazları,</a>
+                                        <a href="#">Şarj Kabloları,</a>
+                                        <a href="#">Araç İçi Telefon Tutucular,</a>
+                                        <a href="#">Ekran Koruyucular,</a>
+                                        <a href="#">Telefon Kulaklıkları,</a>
+                                        <a href="#">Taşınabilir Hoparlörler,</a>
+                                        <a href="#">Telefon Oyun Aksesuarları,</a>
+                                        <a href="#">Selfie (Özçekim) Çubukları,</a>
+                                        <a href="#">Tasarım Kılıflar,</a>
+                                        <a href="#">Sanal Gerçeklik Gözlüğü,</a>
+                                        <a href="#">Bluetooth Araç Kitleri,</a>
+                                        <a href="#">Akıllı Saat ve Bileklik Aksesuarları,</a>
+                                        <a href="#">Bluetooth Kulaklık Aksesuarları,</a>
+                                        <a href="#">Cep Telefonu Yedek Parçaları ve Bataryalar,</a>
+                                        <a href="#">Diğer Telefon Aksesuarları,</a>
+                                        <a href="#">GPS Takip Cihazları,</a>
+                                    </span>
+                                </div>
+                            </div> <!-- end of column 1 -->
+
+                            <div class="column-2">
+                                <div class="link-container">
+                                    <span class="container-title">
+                                        <a href="#">Akıllı Saatler</a>
+                                    </span>
+                                    <span class="container-content">
+                                        <a href="#">Akıllı Saatler,</a>
+                                        <a href="#">Akıllı Çocuk Saatleri,</a>
+                                        <a href="#">Kordonlar ve Aksesuarlar</a>
+                                    </span>
+                                </div>
+
+                                <div class="link-container">
+                                    <span class="container-title">
+                                        <a href="#">Akıllı Bileklikler</a>
+                                    </span>
+                                </div>
+
+                                <div class="link-container">
+                                    <span class="container-title">
+                                        <a href="#">Powerbank</a>
+                                    </span>
+                                </div>
+
+                                <div class="link-container">
+                                    <span class="container-title">
+                                        <a href="#">Bluetooth Kulaklık</a>
+                                    </span>
+                                </div>
+
+                                <div class="link-container">
+                                    <span class="container-title">
+                                        <a href="#">Kılıflar</a>
+                                    </span>
+                                    <span class="container-content">
+                                        <a href="#">Tasarım Kılıflar,</a>
+                                        <a href="#">Koruyucu Kılıflar</a>
+                                    </span>
+                                </div>
+                                
+                                <div class="link-container">
+                                    <span class="container-title">
+                                        <a href="#">Ekran Koruyucular</a>
+                                    </span>
+                                </div>
+
+                                <div class="link-container">
+                                    <span class="container-title">
+                                        <a href="#">Şarj Cihazları</a>
+                                    </span>
+                                </div>
+
+                                <div class="link-container">
+                                    <span class="container-title">
+                                        <a href="#">Şarj Kabloları</a>
+                                    </span>
+                                </div>
+
+                                <div class="link-container">
+                                    <span class="container-title">
+                                        <a href="#">Taşınabilir Hoparlörler</a>
+                                    </span>
+                                </div>
+
+                                <div class="link-container">
+                                    <span class="container-title">
+                                        <a href="#">Araç İçi Telefon Tutucular ve<br>Araç Şarj Cihazları</a>
+                                    </span>
+                                    <span class="container-content">
+                                        <a href="#">Araç İçi Telefon Tutucular,</a>
+                                        <a href="#"> Araç Şarj Cihazları</a>
+                                    </span>
+                                </div>
+
+                                <div class="link-container">
+                                    <span class="container-title">
+                                        <a href="#">Selfie Çubukları</a>
+                                    </span>
+                                </div>
+
+                                <div class="link-container">
+                                    <span class="container-title">
+                                        <a href="#">Telefon Oyun Aksesuarları ve<br>Sanal Gerçeklik Gözlükleri</a>
+                                    </span>
+                                    <span class="container-content">
+                                        <a href="#">Telefon Oyun Aksesuarları,</a>
+                                        <a href="#">Sanal Gerçeklik Gözlükleri</a>
+                                    </span>
+                                </div>
+
+                                <div class="link-container">
+                                    <span class="container-title">
+                                        <a href="#">Telsiz ve Masaüstü Telefonlar</a>
+                                    </span>
+                                </div>
+
+                                <div class="link-container">
+                                    <span class="container-title">
+                                        <a href="#">Yurt Dışına Satış</a>
+                                    </span>
+                                </div>
+
+                            </div> <!-- end of column 2 -->
+                        </div>
+
+                        <div
+                            class="electronic-mini-menu"
+                            id="electronic-tv-ses"
+                            style="height: 510px;"
+                        >
+                            <div class="column-1">
+
+                            </div> <!-- end of column-1 -->
+
+                            <div class="column-2">
+
+                            </div> <!-- End of column 2 -->
+                        </div>
+
+                        <div
+                            class="electronic-mini-menu"
+                            id="electronic-beyaz-esya"
+                            style="height: 760px;"
+                        >
+                            ccccccccccccccccccc
+                        </div>
+
+                        <div
+                            class="electronic-mini-menu"
+                            id="electronic-ev-aletleri"
+                            style="height: 780px;"
+                        >
+                            nosy
+                        </div>
+
+                        <div
+                            class="electronic-mini-menu"
+                            id="electronic-foto-kamera"
+                        >
+                            <!-- no height change -->
+                            satisfied yet?
+                        </div>
+
+                        <div
+                            class="electronic-mini-menu"
+                            id="electronic-klima"
+                            style="height: 380px;"
+                        >
+                            legend42
+                        </div>
+
+                        <div
+                            class="electronic-mini-menu"
+                            id="electronic-oyun-konsollari"
+                            style="height: 400px;"
+                        >
+                            teehee
+                        </div>
+                    </div>
+                </li>
+
+                <li class="header-vertical-line"></li>
+                <li class="menu-bar-list-item">
+                    <span class="menu-bar-header">Moda</span>
+                </li>
+                <li class="header-vertical-line"></li>
+                <li class="menu-bar-list-item">
+                    <span class="menu-bar-header"
+                        >Ev, Yaşam, Kırtasiye, Ofis
+                    </span>
+                </li>
+
+                <li class="header-vertical-line"></li>
+
+                <li class="menu-bar-list-item">
+                    <span class="menu-bar-header">Oto, Bahçe, Yapı Market</span>
+                </li>
+
+                <li class="header-vertical-line"></li>
+
+                <li class="menu-bar-list-item">
+                    <span class="menu-bar-header">Anne, Bebek, Oyuncak</span>
+                </li>
+
+                <li class="header-vertical-line"></li>
+
+                <li class="menu-bar-list-item">
+                    <span class="menu-bar-header">Spor, Outdoor</span>
+                </li>
+
+                <li class="header-vertical-line"></li>
+
+                <li class="menu-bar-list-item">
+                    <span class="menu-bar-header">Kozmetik, Kişisel Bakım</span>
+                </li>
+
+                <li class="header-vertical-line"></li>
+
+                <li class="menu-bar-list-item">
+                    <span class="menu-bar-header">Süpermarket, Pet Shop</span>
+                </li>
+
+                <li class="header-vertical-line"></li>
+
+                <li class="menu-bar-list-item">
+                    <span class="menu-bar-header"
+                        >Kitap, Müzik, Film, Hobi</span
+                    >
+                </li>
+            </ul>
+        </div>
+
+        <div id="main-body-content">
+            Welcome to HepsiOrada. Enjoy Your Stay!
+        </div>
+    </body>
+
+    <script src="indexJS.js"></script>
+</html>
